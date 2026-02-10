@@ -219,7 +219,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Cutie' for use default🥂.**\n**For an Example**:\n @Rahul_Official_X45")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Rahul' for use default🥂.**\n**For an Example**:\n @Rahul_Official_X45")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
