@@ -188,11 +188,11 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '/mahi' for extracting name from your text filename🧐.**")
+    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '/Rahul' for extracting name from your text filename🧐.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '/mahi':
+    if raw_text0 == '/Rahul':
         b_name = file_name
     else:
         b_name = raw_text0
